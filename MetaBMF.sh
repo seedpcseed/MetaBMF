@@ -183,8 +183,8 @@ bowtie2_align(){
     echo $@
     if [ "$PIRED" == "true" ];
     then
-        Q1=${sam_name}_1.$EXT
-        Q2=${sam_name}_2.$EXT
+        Q1=${sam_name}.R1.$EXT
+        Q2=${sam_name}.R2.$EXT
         folder=$(basename $sam_name)
         if [ -d "$OUTDIR/$folder" ]; then 
             echo $OUTDIR/$folder exists
